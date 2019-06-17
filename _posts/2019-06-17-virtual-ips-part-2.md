@@ -1,7 +1,7 @@
 ---
 layout: post
-title: High availability: Using Keepalived
-subtitle: Part 2: Keepalived Configuration
+title: High Availability Using Keepalived
+subtitle: Part 2\: Keepalived Configuration
 background: '/img/posts/03-magic.jpg'
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: High availability: Using Keepalived
-subtitle: Part 1: Mock environment
+title: High Availability Using Keepalived
+subtitle: Part 1\: Mock environment
 background: '/img/posts/03-magic.jpg'
 ---
 
