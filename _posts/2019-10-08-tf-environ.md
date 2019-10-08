@@ -9,15 +9,17 @@ background: '/img/posts/03-deeplearning.jpg'
 
 This is a neural network:
 
-![NN](https://timedotcom.files.wordpress.com/2015/01/mcdonalds-burger.jpg?w=753&quality=85)
+![NN](https://timedotcom.files.wordpress.com/2015/01/mcdonalds-burger.jpg?w=753&quality=85){:height="100%" width="100%"}
 
 This is deep learning:
 
-![DL](http://files.doobybrain.com/wp-content/uploads/2007/10/big-burger.jpg)
+![DL](http://files.doobybrain.com/wp-content/uploads/2007/10/big-burger.jpg){:height="100%" width="100%"}
 
 Then why is this all the rage when we've seen Neural Networks from the 70's?
 
-Answer is, we have mouths and stomachs that can handle the second burger with relative ease. So yeah, is not only that google guys are crazy smart, we've always have smart people in Computer Science, but we've never had this hardware.
+Answer is, we now have mouths and stomachs that can handle the second burger with relative ease. So yeah, is not only that Gogle guys are crazy smart, we've always have smart people in Computer Science.
+
+** We've never had this hardware. **
 
 Of course this is grossly oversimplified and I should burn in hell for this comparison. If you want to dive deep, get a [whitepaper](https://arxiv.org/pdf/1702.07800.pdf).
 
@@ -61,7 +63,7 @@ You can select your target CUDA version [here](https://developer.nvidia.com/cuda
 
 Download the toolkit 
 
-![Download](https://i.imgur.com/KGqwB1W.png)
+![Download](https://i.imgur.com/KGqwB1W.png){:height="100%" width="100%"}
 
 Install the toolkit with:
 
