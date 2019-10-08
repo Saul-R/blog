@@ -19,7 +19,7 @@ Then why is this all the rage when we've seen Neural Networks from the 70's?
 
 Answer is, we now have mouths and stomachs that can handle the second burger with relative ease. So yeah, is not only that Gogle guys are crazy smart, we've always have smart people in Computer Science.
 
-** We've never had this hardware. **
+**We've never had this hardware.**
 
 Of course this is grossly oversimplified and I should burn in hell for this comparison. If you want to dive deep, get a [whitepaper](https://arxiv.org/pdf/1702.07800.pdf).
 
