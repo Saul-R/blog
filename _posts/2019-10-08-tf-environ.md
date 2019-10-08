@@ -13,7 +13,7 @@ This is a neural network:
 
 This is deep learning:
 
-![DL](http://archive.doobybrain.com/2007/10/06/tallest-burger-ive-ever-seen/)
+![DL](http://files.doobybrain.com/wp-content/uploads/2007/10/big-burger.jpg)
 
 Then why is this all the rage when we've seen Neural Networks from the 70's?
 
