@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 rm -rf _site && \
 docker run -ti --rm \
        -v $(PWD):/app \
