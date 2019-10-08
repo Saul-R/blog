@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python deep learning setup on GPU
-subtitle: Get up and running in 30 minutes
+subtitle: Get up and running in less than an hour
 background: '/img/posts/03-deeplearning.jpg'
 ---
 
@@ -25,9 +25,9 @@ The most common language to exploit DL capabilities is Python, with the Tensorfl
 
 In order for TF to work you'll need to install some libraries on your OS (CUDA for GPU computation and cuDNN for Deep Learning capabilities on GPU), and do some easy variable and python management.
 
-## Issues on using TF
+# Step 0: Issues using TF
 
-### Issue #1: Compatibility. Version Hell.
+#### Issue #1: Compatibility and Version Hell.
 
 Each TF version is compiled for a specific version of both CUDA and cuDNN. No backwards compatibility. Let me try to rephrase that. Each TF version is ONLY compatible with ONE combination of CUDA and cuDNN drivers. And no, you cannot use CUDA 10.1 if TF is only for 10.0
 
@@ -37,7 +37,7 @@ https://www.tensorflow.org/install/source#tested_build_configurations
 
 Make sure you know which version of Tensorflow do you need. For this I'd install TF 1.14 as it is the requirement of the faceswap project: https://github.com/deepfakes/faceswap
 
-### Issue #2: Nvidia Drivers on machines that do not have nvidia drivers AKA Nouveau
+#### Issue #2: Nvidia Drivers on machines that do not have nvidia drivers AKA Nouveau
 
 Some linux distros come with Nouveau prepacked instead of the proprietary Nvidia drivers. This is a good thing (FOSS and all that), but disabling it is a bit of a pain I want to experience as few times as possible. Be careful if your environment does not have the Nvidia drivers. 
 
@@ -49,12 +49,12 @@ lsmod | grep nouveau
 
 I won't cover how to install the nvidia driver. You can check if you have it with (for instance) `nvidia-smi`. Find a guide on how to install the driver [here](https://www.advancedclustering.com/act_kb/installing-nvidia-drivers-rhel-centos-7/).
 
-### Issue/rant #3: It looks way harder than it is.
+#### Issue/rant #3: It looks way harder than it is.
 
 Installing Cuda / cuDNN is extremely simple, and can be done on the same machine with multiple versions! Those two super fancy things are just a collection of libraries. There seems to be an obsesion to keep Deep Learning related topics complicated, they are not. </rant>
 
 
-## Install CUDA / cuDNN
+# Step 1: Install CUDA / cuDNN
 
 Once you know the Tensorflow version you're going to install, you need to make sure which CUDA version is compatible with it. In my case, since I'm using TF 1.14, I'll need CUDA 10.0.
 You can select your target CUDA version [here](https://developer.nvidia.com/cuda-toolkit-archive).
@@ -91,7 +91,7 @@ You can definitelly have multiple CUDA cuDNN versions cohexisting on the same ma
 
 There is something else I like to do, which is creating a virtualenv for your project to isolate dependencies. You could have different TF versions that way and you'll always keep your deps isolated from the rest. It's very common for a group of people to share a GPU enabled instance as those are VERY expensive.
 
-## Install Tensorflow
+# Step 2: Install Tensorflow
 
 I strongly recommend using a virtualenv for your DL project (well, for almost any project you're starting).
 
@@ -112,7 +112,7 @@ You need to be careful with this for TF versions before 1.14, they unified the p
 pip install tensorflow==1.14
 ```
 
-## Make Tensorflow aware of CUDA and GPUs
+# Step 3: Make Tensorflow aware of CUDA and GPUs
 
 Sounds hard? just TWO ENVIRONMENT VARIABLES:
 
@@ -123,6 +123,7 @@ export LD_LIBRARY_PATH=export LD_LIBRARY_PATH=/usr/local/cuda-<version>/lib64:/u
 ```
 
 - `CUDA_VISIBLE_DEVICES` the list of GPU ids that your session can use.
+
 ```
 # SINGLE GPU
 export CUDA_VISIBLE_DEVICES=0
@@ -153,7 +154,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda-<version>/lib64:/usr/local/cuda-<version>
 ```
 
 
-# Check tensorflow:
+# Step 4: Check tensorflow:
 
 Use this code after you activate your virtualenv. You should at least have the variables for the LD_LIBRARY_PATH exported, either on your virtualenv or just as an `export` command. Invoke python's REPL with `python` and try running this:
 
