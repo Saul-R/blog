@@ -35,9 +35,9 @@ Each TF version is compiled for a specific version of both CUDA and cuDNN. No ba
 
 This is the tested build configurations:
 
-https://www.tensorflow.org/install/source#tested_build_configurations
+[https://www.tensorflow.org/install/source#tested_build_configurations](https://www.tensorflow.org/install/source#tested_build_configurations)
 
-Make sure you know which version of Tensorflow do you need. For this I'd install TF 1.14 as it is the requirement of the faceswap project: https://github.com/deepfakes/faceswap
+Make sure you know which version of Tensorflow do you need. For this I'd install TF 1.14 as it is the requirement of the [faceswap](https://github.com/deepfakes/faceswap) project.
 
 #### Issue #2: Nvidia Drivers on machines that do not have nvidia drivers AKA Nouveau
 
